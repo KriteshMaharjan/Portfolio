@@ -1,0 +1,92 @@
+/* HERO */
+.hero {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+.hero-tag {
+  display: inline-block;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+  transition: color 0.3s;
+}
+.hero h1:hover {
+  color: var(--accent);
+}
+.hero p {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 480px;
+  margin-bottom: 2rem;
+  line-height: 1.75;
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--text);
+  color: var(--bg);
+  border: 1px solid var(--text);
+}
+.btn-primary:hover {
+  background: #333;
+  color: white;
+}
+.btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-outline:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero p,
+  .about p {
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,51 @@
+/* CONTACT */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.2s;
+}
+.contact-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+.contact-link svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 720px) {
+  .contact-row {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-link {
+    width: 100%;
+  }
+}

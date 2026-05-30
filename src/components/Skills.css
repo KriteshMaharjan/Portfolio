@@ -1,0 +1,20 @@
+/* SKILLS */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skill-tag {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  padding: 6px 12px;
+  background: var(--tag-bg);
+  border-radius: 4px;
+  color: var(--text);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+.skill-tag:hover {
+  transform: scale(1.05);
+  background: var(--accent-light);
+}

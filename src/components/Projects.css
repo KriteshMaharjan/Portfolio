@@ -1,0 +1,129 @@
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.project-card:hover {
+  border-color: #bbb;
+  transform: translateY(-2px);
+}
+.card-preview {
+  height: 140px;
+  background: var(--tag-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.card-preview.chatbot {
+  background: linear-gradient(135deg, #e8f5ee 0%, #d1ede0 100%);
+}
+.card-preview.empty {
+  background: var(--tag-bg);
+  border-bottom: 1px dashed var(--border);
+}
+.preview-icon {
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: transform 0.2s;
+  object-fit: cover;
+}
+.preview-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.preview-icon:hover {
+  transform: scale(1.1);
+}
+.empty-label {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #bbb;
+  text-transform: uppercase;
+}
+.card-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+.card-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.card-desc {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+.card-tag {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  padding: 3px 8px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: 3px;
+}
+.card-links {
+  display: flex;
+  gap: 10px;
+}
+.card-link {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.card-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+.card-empty-hint {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: #ccc;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 720px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-preview {
+    height: 120px;
+  }
+}
