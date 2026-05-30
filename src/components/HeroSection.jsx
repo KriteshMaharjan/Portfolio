@@ -21,8 +21,8 @@ export function HeroSection() {
             Get in touch
           </a>
           <a
-            href="d:\Protfolio\resume.pdf"
-            download="Resume.pdf"
+            href="/resume.pdf"
+            download="resume.pdf"
             className="btn btn-primary"
           >
             Download Resume
