@@ -26,9 +26,9 @@ export function UsedCarPrice() {
             >
               GitHub
             </a>
-            <a href="#" className="card-link">
+            {/* <a href="#" className="card-link">
               Live Demo
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
