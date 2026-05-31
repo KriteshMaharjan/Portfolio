@@ -1,7 +1,7 @@
 import carprice from "../../assets/carprice.png";
-import LandingPage from "../../assets/UsedCarImg/landingpage.jpeg";
-import LoginPage from "../../assets/UsedCarImg/loginpage.jpeg";
-import RegisterPage from "../../assets/UsedCarImg/registerpage.jpeg";
+import LandingPage from "../../assets/UsedCarImg/LandingPage.jpeg";
+import LoginPage from "../../assets/UsedCarImg/LoginPage.jpeg";
+import RegisterPage from "../../assets/UsedCarImg/RrgisterPage.jpeg";
 import predictionPage from "../../assets/UsedCarImg/prediction.jpeg";
 import historyPage from "../../assets/UsedCarImg/history.jpeg";
 import { useState } from "react";
