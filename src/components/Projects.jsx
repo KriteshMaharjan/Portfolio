@@ -3,6 +3,7 @@ import { DigitalLibrary } from "./Projects/DigitalLibrary.jsx";
 import { UsedCarPrice } from "./Projects/UsedCarPrice.jsx";
 import { HuddleLandingPage } from "./Projects/HuddleLandingPage.jsx";
 import { IntroSection } from "./Projects/IntroSection.jsx";
+import { InProcess } from "./Projects/InProcess.jsx";
 import "./Projects.css";
 export function Projects() {
   return (
@@ -25,6 +26,9 @@ export function Projects() {
 
           {/* Huddle Landing Page */}
           <HuddleLandingPage />
+
+          {/* In Process Project */}
+          <InProcess />
         </div>
       </section>
 
